@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Layout01</title>
+    <style>
+        :root {
+            --accent-color: #f3ff87;
+            --text-color: white;
+            --background-color: #0b002b;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .nav_a {
+            text-decoration: none;
+            color: var(--text-color);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--background-color);
+            padding: 8px 12px;
+        }
+
+        #wrap {width: 1000px; height: 900px; margin: 0 auto; text-align: center;}
+        #side {float: left; width: 300px; height: 600px; line-height: 600px; background: #43a047;}
+        #contents {float: left; width: 700px; height: 600px; line-height: 600px; background: #4caf50;}
+        #footer {float: left; width: 1000px; height: 100px; line-height: 100px; background: #66bb6a;}
+
+        .nav_menu {
+            display: flex;
+            list-style: none;
+            padding-left: 0;}
+
+        .nav_menu li {
+            padding: 8px 12px;}
+
+        .nav_menu li:hover {
+            color: var(--background-color);
+            background-color: var(--accent-color);
+            border-radius: 4px;}
+
+        .nav_menu li a:hover {
+            color: var(--background-color);}
+
+        .navbar_toggleBtn {
+            display: none;
+            color:var(--text-color);
+            position: absolute;
+            right: 32px;
+            font-size: 24px;}
+
+        .head_nav a:link, a:visited, a:hover, a:active {
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        header h1 {
+            position: absolute;
+            left: -2000px;
+        }
+
+        .head_container {
+            width: 1270px;
+            margin: 0;
+            auto;
+        }
+    </style>
+</head>
+<body>
+<div id="wrap">
+    <header>
+        <div class="head_container">
+            <h1>회사 홈페이지 헤더 메뉴</h1>
+            <img src="./asset/img.jpg" title="로고"/>
+            <nav>
+                <ul>
+                    <li><a href="" class="head_nav">Home</a></li>
+                    <li><a href="" class="head_nav">공지사항</a></li>
+                    <li><a href="" class="head_nav">게시판n</a></li>
+                    <li><a href="" class="head_nav">FQA</a></li>
+                    <li><a href="" class="head_nav">고객센터</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <nav class="navbar">
+        <div class="nav_logo">
+            <a href="" class="nav_a">원광대 컴소공</span></a>
+        </div>
+        <ul class="nav_menu">
+            <li><a href="" class="nav_a">Home</a></li>
+            <li><a href="" class="nav_a">공지사항</a></li>
+            <li><a href="" class="nav_a">게시판n</a></li>
+            <li><a href="" class="nav_a">FQA</a></li>
+            <li><a href="" class="nav_a">고객센터</a></li>
+        </ul>
+        <a href="#" class="navbar_toggleBtn">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </nav>
+    <div id="side">SIDE</div>
+    <div id="contents">CONTENTS</div>
+    <div id="footer">FOOTER</div>
+</div>
+</body>
+</html>
