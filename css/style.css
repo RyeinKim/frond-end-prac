@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&family=Noto+Sans+KR:wght@500;900&family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700;400;600&display=swap');
+
 body {
     text-align: center;
 }
@@ -97,8 +100,9 @@ header {
     justify-content: space-between;
     align-item: center;
 }
-header h1 {
+header h3 {
     flex-grow: 1;
+    font-family: 'Roboto', sans-serif;
 }
 header nav {
     margin-left: auto;
@@ -191,10 +195,44 @@ section {
     border: 3px solid gray;
     flex-grow: 1;
 }
+section h2 {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 10px;
+}
+section a {
+    text-decoration: none;
+    color: black;
+}
 article {
     border: 1px solid gray;
     margin-bottom: 10px;
-    min-height: 100px;
+    min-height: 50px;
+}
+article .post_head {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-bottom: 5px;
+}
+article .post_body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 9pt;
+    color: black;
+}
+article .post_date {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 9pt;
+    color: gray;
+}
+article .post_info {
+    margin-top: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 8pt;
+    color: gray;
+}
+article a {
+    text-decoration: none;
+    color: black;
 }
 /*=====================================*/
 

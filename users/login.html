@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>회원가입 사이트</title>
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="../css/login_style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="signin">
+                <h2>Sign in</h2>
+                <div class="inout">
+                    <p class="info">이메일</p>
+                    <input type="text", name="userId", size="20">
+                    <p class="info">패스워드</p>
+                    <input type="password", name="userPw" size="20"><br>
+                </div>
+                <input type="button" id="login_btn" value="로그인">
+                <p class="forgot"><a href="#" class="findlink">Forgot Email?</a></p>
+                <p class="forgot"><a href="#" class="findlink">Forgot Password?</a></p>
+            </div>
+            <div class="signup">
+                <h2>Sign Up</h2>
+                <div>
+                    <p class="regi">우리 학과에서의 새로운 경험</p>
+                    <p class="regi">지금 바로 시작하기</p>
+                </div>
+                <button id="register_btn" onclick="location.href='/users/register.html'">가입하기</button>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-content">
+                <ul class="no_dot">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#" style="font-weight: bold;">개인정보처리방침</a></li>
+                    <li><a href="#">커뮤니티이용규칙</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </div>
+            <p>Copyright © 2023 Ryein Kim. All rights reserved.</p>
+            <address>Contact webmaster for more information. 010-6797-6896</address>
+        </footer>
+    </body>
+</html>

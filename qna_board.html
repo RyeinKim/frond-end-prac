@@ -3,9 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>공지사항 - CSE</title>
+    <title>질문답변 - CSE</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <script type="text/javascript">
+        function a(y) {
+            if (y.defaultValue === y.value) {
+                y.value = "";
+            }
+        }
+    </script>
 </head>
 <body>
 <div id="wrapper">
@@ -30,7 +37,7 @@
                     <ul>
                         <li><a href="board/notice_board.html">공지사항</a></li>
                         <li><a href="../free_board.html#">자유게시판</a></li>
-                        <li><a href="../qna_board.html">질문답변</a></li>
+                        <li><a href="qna_board.html">질문답변</a></li>
                     </ul>
                 </li>
                 <li>
@@ -47,37 +54,44 @@
     <div class="flex-container">
         <div>
             <section>
-                <a href="free_board.html"><h2>자유게시판</h2></a>
-                <article>
-                    <a href="#"><p class="post_head">글1 제목</p></a>
-                    <a href="#"><p class="post_body">글1 내용</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글2 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글3 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글4 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글5 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
+                <a href="board/free_board.html"><h2>자유게시판</h2></a>
+                <div>
+                    <article>
+                        <a href="#"><p class="post_head">글1 제목</p></a>
+                        <a href="#"><p class="post_body">글1 내용</p></a>
+                        <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
+                        <div class="post_info" style="float: left;">작성일자</div>
+                    </article>
+                    <article>
+                        <a href="#"><p class="post_head">글2 제목</p></a>
+                        <a href="#"><p class="post_body">작성일자</p></a>
+                        <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
+                        <div class="post_info" style="float: left;">작성일자</div>
+                    </article>
+                    <article>
+                        <a href="#"><p class="post_head">글3 제목</p></a>
+                        <a href="#"><p class="post_body">작성일자</p></a>
+                        <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
+                        <div class="post_info" style="float: left;">작성일자</div>
+                    </article>
+                    <article>
+                        <a href="#"><p class="post_head">글4 제목</p></a>
+                        <a href="#"><p class="post_body">작성일자</p></a>
+                        <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
+                        <div class="post_info" style="float: left;">작성일자</div>
+                    </article>
+                    <article>
+                        <a href="#"><p class="post_head">글5 제목</p></a>
+                        <a href="#"><p class="post_body">작성일자</p></a>
+                        <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
+                        <div class="post_info" style="float: left;">작성일자</div>
+                    </article>
+                </div>
+                <div>
+                    <form action="https://www.google.com/search" method="GET">
+                        <input type="text" name="post_search" value="검색어를 입력후 Enter" onfocus="a(this);">
+                    </form>
+                </div>
             </section>
         </div>
         <div class="aside-container">
