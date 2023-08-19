@@ -6,100 +6,119 @@
     <title>공지사항 - CSE</title>
     <link rel="stylesheet" type="text/css" href="../css/reset.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <style>
+        section li {
+            list-style-type: none;
+        }
+
+        section  .post-container {
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            border: 2px solid #d7d7d7;
+            margin: 15px;
+        }
+
+        section  .post-title {
+            font-size: 20px;
+        }
+
+        section  .post-number {
+            font-size: 15px;
+            padding: 15px;
+        }
+
+        section  .pagination-container {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script src="../js/data.js"></script>
 </head>
 <body>
-<div id="wrapper">
-    <header>
-        <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
-            <img src="../assets/img.png" alt="Logo" width="60" style="margin-right: 10px;">
-            <h3 style="margin: 0;">Computer<br>Software<br>Engineering</h3>
-        </a>
-        <ul class="no_dot">
-            <li><a href="../users/login.html">Sign in</a></li>
-            <li id="signup">
-                <a href="../users/register.html">Sign Up</a>
-            </li>
-        </ul>
-    </header>
-    <nav>
-        <div class="dropmenu">
+    <div id="wrapper">
+        <header>
+            <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="../assets/img.png" alt="Logo" width="60" style="margin-right: 10px;">
+                <h3 style="margin: 0;">Computer<br>Software<br>Engineering</h3>
+            </a>
             <ul class="no_dot">
-                <li><a href="../index.html">Home</a></li>
-                <li>
-                    <a href="#">Board</a>
-                    <ul>
-                        <li><a href="board/notice_board.html">공지사항</a></li>
-                        <li><a href="free_board.html#">자유게시판</a></li>
-                        <li><a href="../qna_board.html">질문답변</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#" style="border-right: none;">Contact Us</a>
-                    <ul>
-                        <li><a href="../contact/complain.html">고객센터</a></li>
-                        <li><a href="../contact/one2one_complain.html">1:1 Q&A</a></li>
-                        <li><a href="../contact/send_mail.html">메일보내기</a></li>
-                    </ul>
+                <li><a href="../users/login.html">Sign in</a></li>
+                <li id="signup">
+                    <a href="../users/register.html">Sign Up</a>
                 </li>
             </ul>
-        </div>
-    </nav>
-    <div class="flex-container">
-        <div>
-            <section>
-                <h2>공지사항</h2>
-                <article>
-                    <a href="#"><p class="post_head">글1 제목</p></a>
-                    <a href="#"><p class="post_date">작성일자</p></a>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글2 제목</p></a>
-                    <a href="#"><p class="post_date">작성일자</p></a>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글3 제목</p></a>
-                    <a href="#"><p class="post_date">작성일자</p></a>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글4 제목</p></a>
-                    <a href="#"><p class="post_date">작성일자</p></a>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글5 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                </article>
-            </section>
-        </div>
-        <div class="aside-container">
-            <aside id="aside_top">
-                <ul>
-                    <img id="profile" src="../assets/img.png" alt="profile" width="100" style="margin-right: 10px;">
-                    <p id="name">이 름</p>
-                    <p id="stnum">학번</p>
-                    <button type="button">내정보</button>
-                    <button type="button">로그아웃</button>
+        </header>
+        <nav>
+            <div class="dropmenu">
+                <ul class="no_dot">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="#">Board</a>
+                        <ul>
+                            <li><a href="board/notice_board.html">공지사항</a></li>
+                            <li><a href="free_board.html#">자유게시판</a></li>
+                            <li><a href="../qna_board.html">질문답변</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" style="border-right: none;">Contact Us</a>
+                        <ul>
+                            <li><a href="../contact/complain.html">고객센터</a></li>
+                            <li><a href="../contact/one2one_complain.html">1:1 Q&A</a></li>
+                            <li><a href="../contact/send_mail.html">메일보내기</a></li>
+                        </ul>
+                    </li>
                 </ul>
-            </aside>
-            <aside>
-                <ul>
-                    <li><a href="#">내가쓴 글</a></li>
-                    <li><a href="#">댓글단 글</a></li>
-                    <li><a href="#">내 스크랩</a></li>
+            </div>
+        </nav>
+        <div class="flex-container">
+                <section>
+                    <ul>
+                        <li>
+                            <div class="post-container">
+                                <p class="post-number">1</p>
+                                <p class="post-title">title</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="pagination-container">
+                        <div class="prev-button">이전</div>
+                        <div class="number-button-wrapper"><span class="number-button">1</span></div>
+                        <div class="next-button">이후</div>
+                    </div>
+                </section>
+            <div class="aside-container">
+                <aside id="aside_top">
+                    <ul>
+                        <img id="profile" src="../assets/img.png" alt="profile" width="100" style="margin-right: 10px;">
+                        <p id="name">이 름</p>
+                        <p id="stnum">학번</p>
+                        <button type="button">내정보</button>
+                        <button type="button">로그아웃</button>
+                    </ul>
+                </aside>
+                <akide>
+                    <ul>
+                        <li><a href="#">내가쓴 글</a></li>
+                        <li><a href="#">댓글단 글</a></li>
+                        <li><a href="#">내 스크랩</a></li>
+                    </ul>
+                </akide>
+            </div>
+        </divk
+        <footer>
+            <div class="footer-content">
+                <ul class="no_dot">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#" style="font-weight: bold;">개인정보처리방침</a></li>
+                    <li><a href="#">커뮤니티이용규칙</a></li>
+                    <li><a href="#">공지사항</a></li>
                 </ul>
-            </aside>
-        </div>
+            </div>
+            <p>Copyright © 2023 Ryein Kim. All rights reserved.</p>
+            <address>Contact webmaster for more information. 010-6797-6896</address>
+        </footer>
     </div>
-    <footer>
-        <div class="footer-content">
-            <ul class="no_dot">
-                <li><a href="#">이용약관</a></li>
-                <li><a href="#" style="font-weight: bold;">개인정보처리방침</a></li>
-                <li><a href="#">커뮤니티이용규칙</a></li>
-                <li><a href="#">공지사항</a></li>
-            </ul>
-        </div>
-        <p>Copyright © 2023 Ryein Kim. All rights reserved.</p>
-        <address>Contact webmaster for more information. 010-6797-6896</address>
-    </footer>
-</div>
+<!--    <script src="../js/pagenation.js"></script>-->
 </body>
