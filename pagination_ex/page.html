@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>타이틀 제목</title>
+    <title>공지사항 - CSE</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -16,9 +16,9 @@
                     <h3 style="margin: 0;">Computer<br>Software<br>Engineering</h3>
                 </a>
                 <ul class="no_dot">
-                    <li><a href="./users/login.html">Sign in</a></li>
+                    <li><a href="#">Sign in</a></li>
                     <li id="signup">
-                        <a href="./users/register.html">Sign Up</a>
+                        <a href="#">Sign Up</a>
                     </li>
                 </ul>
             </div>
@@ -26,44 +26,36 @@
         <nav>
             <div class="dropmenu">
                 <ul class="no_dot">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li>
                         <a href="#">Board</a>
                         <ul>
-                            <li><a href="./board/notice.html">공지사항</a></li>
-                            <li><a href="./board/free_board.html">자유게시판</a></li>
-                            <li><a href="#">질문답변</a></li>
+                            <li><a href="board/notice_board.html">공지사항</a></li>
+                            <li><a href="free_board.html#">자유게시판</a></li>
+                            <li><a href="../qna_board.html">질문답변</a></li>
                         </ul>
                     </li>
                     <li>
                         <a href="#" style="border-right: none;">Contact Us</a>
                         <ul>
-                            <li><a href="./contact/complain.html">고객센터</a></li>
-                            <li><a href="./contact/one2one_complain.html">1:1 Q&A</a></li>
-                            <li><a href="./contact/send_mail.html">메일보내기</a></li>
+                        <li><a href="../contact/complain.html">고객센터</a></li>
+                            <li><a href="../contact/one2one_complain.html">1:1 Q&A</a></li>
+                            <li><a href="../contact/send_mail.html">메일보내기</a></li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </nav>
         <div class="flex-container">
-            <div>
                 <section>
-                    <article>
-                        <p>학과정보</p>
-                    </article>
-                    <article>
-                        <p>학사일정</p>
-                    </article>
-                    <article>
-                        <p>졸업요건</p>
-                    </article>
+                    <h2>게시판</h2>
+                    <div id="board-list"></div>
+                    <div id="pagination"></div>
                 </section>
-            </div>
             <div class="aside-container">
                 <aside id="aside_top">
                     <ul>
-                        <img id="profile" src="./assets/img.png" alt="profile" width="100" style="margin-right: 10px;">
+                        <img id="profile" src="../assets/img.png" alt="profile" width="100" style="margin-right: 10px;">
                         <p id="name">이 름</p>
                         <p id="stnum">학번</p>
                         <button type="button">내정보</button>
@@ -72,7 +64,7 @@
                 </aside>
                 <aside>
                     <ul>
-                        <li><a href="./users/myBoard.html">내가쓴 글</a></li>
+                        <li><a href="#">내가쓴 글</a></li>
                         <li><a href="#">댓글단 글</a></li>
                         <li><a href="#">내 스크랩</a></li>
                     </ul>
@@ -92,5 +84,7 @@
             <address>Contact webmaster for more information. 010-6797-6896</address>
         </footer>
     </div>
+    <script src="./js/pagenation.js"></script>
 </body>
+
 

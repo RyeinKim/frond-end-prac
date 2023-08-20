@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>공지사항 - CSE</title>
-    <link rel="stylesheet" type="text/css" href="../css/reset.css">
+    <title>자유게시판 - CSE</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
 <div id="wrapper">
     <header>
-        <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
-            <img src="../assets/img.png" alt="Logo" width="60" style="margin-right: 10px;">
-            <h3 style="margin: 0;">Computer<br>Software<br>Engineering</h3>
-        </a>
-        <ul class="no_dot">
-            <li><a href="../users/login.html">Sign in</a></li>
-            <li id="signup">
-                <a href="../users/register.html">Sign Up</a>
-            </li>
-        </ul>
+        <div class="inner">
+            <a href="../index.html" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="../assets/img.png" alt="Logo" width="60" style="margin-right: 10px;">
+                <h3 style="margin: 0;">Computer<br>Software<br>Engineering</h3>
+            </a>
+            <ul class="no_dot">
+                <li><a href="../users/login.html">Sign in</a></li>
+                <li id="signup">
+                    <a href="../users/register.html">Sign Up</a>
+                </li>
+            </ul>
+        </div>
     </header>
     <nav>
         <div class="dropmenu">
@@ -28,9 +29,9 @@
                 <li>
                     <a href="#">Board</a>
                     <ul>
-                        <li><a href="board/notice_board.html">공지사항</a></li>
-                        <li><a href="../free_board.html#">자유게시판</a></li>
-                        <li><a href="../qna_board.html">질문답변</a></li>
+                        <li><a href="notice.html">공지사항</a></li>
+                        <li><a href="free_board.html">자유게시판</a></li>
+                        <li><a href="#">질문답변</a></li>
                     </ul>
                 </li>
                 <li>
@@ -45,41 +46,11 @@
         </div>
     </nav>
     <div class="flex-container">
-        <div>
-            <section>
-                <a href="free_board.html"><h2>자유게시판</h2></a>
-                <article>
-                    <a href="#"><p class="post_head">글1 제목</p></a>
-                    <a href="#"><p class="post_body">글1 내용</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글2 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글3 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글4 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-                <article>
-                    <a href="#"><p class="post_head">글5 제목</p></a>
-                    <a href="#"><p class="post_body">작성일자</p></a>
-                    <div class="post_info" style="float: left; margin-right: 10px;">작성자</div>
-                    <div class="post_info" style="float: left;">작성일자</div>
-                </article>
-            </section>
-        </div>
+        <section>
+            <h2>자유게시판</h2>
+            <div id="board-list"></div>
+            <div id="pagination"></div>
+        </section>
         <div class="aside-container">
             <aside id="aside_top">
                 <ul>
@@ -92,7 +63,7 @@
             </aside>
             <aside>
                 <ul>
-                    <li><a href="#">내가쓴 글</a></li>
+                    <li><a href="../users/myBoard.html">내가쓴 글</a></li>
                     <li><a href="#">댓글단 글</a></li>
                     <li><a href="#">내 스크랩</a></li>
                 </ul>
@@ -112,4 +83,7 @@
         <address>Contact webmaster for more information. 010-6797-6896</address>
     </footer>
 </div>
+<script src="../js/pagenation.js"></script>
 </body>
+
+
